@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mainnav.css">
+</head>
+
+<body>
+    <div class="demo">
+        <ul class="nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Menu</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">All</a>
+                    <a class="dropdown-item" href="#">Fruits</a>
+                    <a class="dropdown-item" href="#">Vegetables</a>
+                    <a class="dropdown-item" href="#">Oils</a>
+                    <a class="dropdown-item" href="#">Grains</a>
+                    <a class="dropdown-item" href="#">Species</a>
+                    <a class="dropdown-item" href="#">Milk Products</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dashboard</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Orders</a>
+                    <a class="dropdown-item" href="#">Profile</a>
+                    <a class="dropdown-item" href="#">Wishlists</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">LoanSection</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Accounts</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Contacts</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Privacy Policy</a>
+
+                </div>
+            </li>
+
+
+
+        </ul>
+    </div>
+    <div id="sectionGroceryHome">
+        <h1 class="heading">Grocery</h1>
+        <div class="detailed-view-card-container">
+            <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://media.istockphoto.com/id/1130116246/photo/various-smoothies-bottles-and-ingredients.jpg?s=612x612&w=0&k=20&c=0dUycSz26cwWyiJQxbyKZU5uM0UpvaFqEvLDjQOOHfM=" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://media.istockphoto.com/id/925240050/photo/smoothie-bowl-with-banana-strawberry-blueberry-granola-and-pomegranate.jpg?s=612x612&w=0&k=20&c=ikpuBVK4cGhQ9duLdnnFTcztZkGiZ8QXSt_r0StexXk=" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://media.istockphoto.com/id/1297420369/photo/herbs-and-spices-in-bowels.jpg?s=612x612&w=0&k=20&c=66XeoGm_haRIWB7kGgng6kuo_L1mMOFZLEimXYHPzGM=" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://t4.ftcdn.net/jpg/05/02/83/49/360_F_502834976_8DEOJEMt20OI4rTZzuLNniKdswyJzfSL.webp" class="d-block w-100" alt="..." />
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="bg-danger">
+            <p class="para">Latest Arrivals</p>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="bg-container">
+                <div class="fruits-item1">
+                    <div class="card-container">
+                        <img src="https://t3.ftcdn.net/jpg/02/02/67/00/360_F_202670033_L2na30dIVjD5o2UlvF9DT0wlzdFIti04.webp" height=150 width=150 />
+                        <h4 class=fruits-name1>Apple</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="fruits-item2">
+                    <div class="card-container">
+                        <img src="https://t4.ftcdn.net/jpg/00/87/98/57/360_F_87985733_x0NZX9tDBv84A9oRo8Lg0xSSzN9tlhdY.webp" height=150 width=150 />
+                        <h4 class="fruits-name2">Mango</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="fruits-item3">
+                    <div class="card-container">
+                        <img src="https://t4.ftcdn.net/jpg/02/73/48/81/360_F_273488191_apKUSK7zF150VEJ1Jwnut9NZKtsHGjOg.webp" height=150 width=150 />
+                        <h4 class=fruits-name3>Pineapple</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="fruits-item4">
+                    <div class="card-container">
+                        <img src="https://t3.ftcdn.net/jpg/00/89/32/68/360_F_89326894_8XFGiLixKiovSguE1OmH6PCOanb2aSuZ.webp" height=150 width=150 />
+                        <h4 class="fruits-name4">Custardapple</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="fruits-item5">
+                    <div class="card-container">
+                        <img src="https://t3.ftcdn.net/jpg/00/67/33/96/360_F_67339693_sfxE99Kjdnj3vIqHgxUerzUOkMnTadGI.webp" height=150 width=150 />
+                        <h4 class=fruits-name5>Cherry</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="fruits-item6">
+                    <div class="card-container">
+                        <img src="https://t3.ftcdn.net/jpg/02/48/94/62/360_F_248946242_y9DTVHkyighoADVXUhv1OqgrblRvK1d8.webp" height=150 width=150 />
+                        <h4 class="fruits-name6">Orange</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="fruits-item7">
+                    <div class="card-container">
+                        <img src="https://t4.ftcdn.net/jpg/00/70/94/63/360_F_70946377_VJXdpJqld6XOsOTO6lt95ieZSxGO0faM.webp" height=150 width=150 />
+                        <h4 class="fruits-name6">Grapes</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="bg-container">
+                <div class="vegetables-item1">
+                    <div class="card-container">
+                        <img src="https://www.olivetomato.com/wp-content/uploads/2013/01/freshtomatoes1.jpg" height=150 width=150 />
+                        <h4 class=vegetables-name1>Tamato</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="vegetables-item2">
+                    <div class="card-container">
+                        <img src="https://t4.ftcdn.net/jpg/03/45/37/01/360_F_345370116_8T45aoiUgjUx6NoclM4X2o3AuqEOibkg.webp" height=150 width=150 />
+                        <h4 class="vegetables-name2">Cabbage</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="vegetables-item3">
+                    <div class="card-container">
+                        <img src="https://t4.ftcdn.net/jpg/00/53/80/49/360_F_53804942_qGXqRzUayAfeD7AQev5M0IowBuQZeCXL.webp" height=150 width=150 />
+                        <h4 class="vegetables-name3">Potato</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="vegetables-item4">
+                    <div class="card-container">
+                        <img src="https://t3.ftcdn.net/jpg/00/91/98/36/360_F_91983678_MGFz5B9Ac39zyxFYu8NJa2owrrkEYE5k.webp" height=150 width=150 />
+                        <h4 class="vegetables-name4">Brinjal</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="vegetables-item5">
+                    <div class="card-container">
+                        <img src="https://greenvegetableseeds.com/wp-content/uploads/2016/01/Carrot-Romance-F1-www.greenvegetableseeds.com_.jpg" height=150 width=150 />
+                        <h4 class="vegetables-name5">Carrot</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="vegetables-item6">
+                    <div class="card-container">
+                        <img src="https://t4.ftcdn.net/jpg/01/95/13/95/360_F_195139544_qoQLZ72kg0BkW2zTrDgQKUMmByERQG66.webp" height=150 width=150 />
+                        <h4 class="vegetables-name6">Beetroot</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="vegetables-item6">
+                    <div class="card-container">
+                        <img src="https://t4.ftcdn.net/jpg/00/45/46/51/360_F_45465133_viYSKnggpp4TY0qBbBukc9mhxBNp9L7v.webp" height=150 width=150 />
+                        <h4 class="vegetables-name6">Pumbkin</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="bg-container">
+                <div class="Grains-item1">
+                    <div class="card-container">
+                        <img src="https://t4.ftcdn.net/jpg/04/00/05/49/360_F_400054994_y5Tv3SEeaLX2ZDUOlcMUYzXXbJz4kf0Y.webp" height=150 width=150 />
+                        <h4 class=Grains-name1>Mung beans</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="Grains-item2">
+                    <div class="card-container">
+                        <img src="https://t4.ftcdn.net/jpg/05/42/68/23/360_F_542682384_mwswejAcRPnPOFTJmrZRjk2VSFQVdatA.webp" height=150 width=150 />
+                        <h4 class="Grains-name2">Chenna dal</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="Grains-item3">
+                    <div class="card-container">
+                        <img src="https://t3.ftcdn.net/jpg/03/88/96/54/360_F_388965487_Llq45uUYdzgjQNDSjbyKBFOi2azUmPxy.webp" height=150 width=150 />
+                        <h4 class="Grains-name3">Bengal grams</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="Grains-item4">
+                    <div class="card-container">
+                        <img src="https://t3.ftcdn.net/jpg/04/54/75/92/360_F_454759283_N0IzonWFP8LAfu3dfRaM0kabGMsXxnum.webp" height=150 width=150 />
+                        <h4 class="Grains-name4">Lobia dal</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="Grains-item5">
+                    <div class="card-container">
+                        <img src="https://t4.ftcdn.net/jpg/04/58/85/13/360_F_458851331_OYGailP1TALsYq7xITsCckGlLY6taVgb.webp" height=150 width=150 />
+                        <h4 class="Grains-name5">Dal</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="Grains-item6">
+                    <div class="card-container">
+                        <img src="https://t4.ftcdn.net/jpg/01/72/77/93/360_F_172779328_uPlpvN2FCv0qgUntgpLKL7JskhS19LKu.webp" height=150 width=150 />
+                        <h4 class="Grains-name6">Moong dal</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="Grains-item7">
+                    <div class="card-container">
+                        <img src="https://t4.ftcdn.net/jpg/01/73/39/89/360_F_173398973_QNgLODoOLX5fZWRsbwRYlBXi8wWhDTVU.webp" height=150 width=150 />
+                        <h4 class="Grains-name6">Wheat</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="bg-container">
+                <div class="oils-item1">
+                    <div class="card-container">
+                        <img src="https://t3.ftcdn.net/jpg/01/76/69/72/360_F_176697286_Ru2971MsTRsdLpTgu9yal7aK3NwkEz0V.webp" height=150 width=150 />
+                        <h4 class=oils-name1>Groundnutoil</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="oils-item2">
+                    <div class="card-container">
+                        <img src="https://t4.ftcdn.net/jpg/00/88/18/97/360_F_88189711_bRgSBE6ZbAtbG9vVQN9tpWZUYDAnNHFp.webp" height=150 width=150 />
+                        <h4 class="oils-name2">Sunflower oil</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="oils-item3">
+                    <div class="card-container">
+                        <img src="https://t3.ftcdn.net/jpg/04/74/72/24/360_F_474722439_dIzfhrxcZriqXVh3jMy1ctNo8bliZ1Tv.webp" height=150 width=150 />
+                        <h4 class=oils-name3>Cuminseedsoil</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="oils-item4">
+                    <div class="card-container">
+                        <img src="https://t3.ftcdn.net/jpg/04/68/75/64/360_F_468756455_h1EyYiRlca9I8cNQTzHlS6C7Evnf2jtO.webp" height=150 width=150 />
+                        <h4 class="oils-name4">Castro oil</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="oils-item5">
+                    <div class="card-container">
+                        <img src="https://t4.ftcdn.net/jpg/05/17/06/41/360_F_517064166_RcHYM9LSS2MG2o6oNxJ8ghdooghldCbM.webp" height=150 width=150 />
+                        <h4 class=oils-name5>Olive oil</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="oils-item6">
+                    <div class="card-container">
+                        <img src="https://t3.ftcdn.net/jpg/01/06/24/72/360_F_106247223_R4Fr2E7mvtuix8Px9eLEqMA9xy8QnsK5.webp" height=150 width=150 />
+                        <h4 class="oils-name6">Coconut oil</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="oils-item7">
+                    <div class="card-container">
+                        <img src="https://t3.ftcdn.net/jpg/05/62/56/78/360_F_562567808_bU97MPkynl7p0Bvoeie9FpJ8EfDCRjcY.webp" height=150 width=150 />
+                        <h4 class="oils-name6">Almond oil</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="bg-container">
+                <div class="Spices-item1">
+                    <div class="card-container">
+                        <img src="https://t3.ftcdn.net/jpg/01/01/37/28/360_F_101372815_EkwGX6Jsyuul4JalOAc5vsXkohpLREhW.webp" height=150 width=150 />
+                        <h4 class=Spices-name1>Chinnamon</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="Spices-item2">
+                    <div class="card-container">
+                        <img src="https://t3.ftcdn.net/jpg/04/25/50/66/360_F_425506676_qRlGm6GSw5FjYmQDikDi9P4b87iOlU2S.webp" height=150 width=150 />
+                        <h4 class="Spices-name2">Red chillies</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="Spices-item3">
+                    <div class="card-container">
+                        <img src="https://t4.ftcdn.net/jpg/04/36/14/61/360_F_436146195_C1uvQPEDOGIaww76jvIBMLVoUQJN3OI5.webp" height=150 width=150 />
+                        <h4 class="Spices-name3">Garlic</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="Spices-item4">
+                    <div class="card-container">
+                        <img src="https://t3.ftcdn.net/jpg/02/76/97/90/360_F_276979013_VixAnzzAmShrq7j83Iv8IATlpKkuZhSu.webp" height=150 width=150 />
+                        <h4 class="Spices-name4">Ginger</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="Spices-item5">
+                    <div class="card-container">
+                        <img src="https://t3.ftcdn.net/jpg/01/84/47/34/360_F_184473436_BcWvxv62sDKSizvE8A6LxjyqIrqf3CH5.webp" height=150 width=150 />
+                        <h4 class="Spices-name5">Zeera</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="Spices-item6">
+                    <div class="card-container">
+                        <img src="https://t3.ftcdn.net/jpg/01/22/65/10/360_F_122651057_tStdczdvi1sweIVnns2bzBWZMVd0qHwZ.webp" height=150 width=150 />
+                        <h4 class="Spices-name6">corianderseed</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="Spices-item7">
+                    <div class="card-container">
+                        <img src="https://t3.ftcdn.net/jpg/00/46/43/38/360_F_46433885_pyLrmyDWOdEjR1TgqHQcFPfqUWi7J3By.webp" height=150 width=150 />
+                        <h4 class="Spices-name6">Cloves</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="bg-container">
+                <div class="Milkproducts-item1">
+                    <div class="card-container">
+                        <img src="https://t3.ftcdn.net/jpg/00/96/41/50/360_F_96415029_0k2WcQvGbIkNHXj7sNnclQ0lgCfsfU4W.webp" height=150 width=150 />
+                        <h4 class=Milproducts-name1>Milk</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="Milkproducts-item2">
+                    <div class="card-container">
+                        <img src="https://t4.ftcdn.net/jpg/01/89/24/45/360_F_189244564_SxN7bcMLYR6oMfmTqu9zSmfWzoRn2SCL.webp" height=150 width=150 />
+                        <h4 class="Milkproducts-name2">Ghee</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="Milkproducts-item3">
+                    <div class="card-container">
+                        <img src="https://t3.ftcdn.net/jpg/01/95/39/00/360_F_195390076_ebWB3cpK2JTtHxNTdnItlbS3K12EniZI.webp" height=150 width=150 />
+                        <h4 class="Milkproducts-name3">Butter</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="Milkproducts-item4">
+                    <div class="card-container">
+                        <img src="https://t3.ftcdn.net/jpg/02/53/96/08/360_F_253960817_dpWv9VmIx10mPRRsEO3ElNM1xoOUQGet.webp" height=150 width=150 />
+                        <h4 class="Milkproducts-name4">Yogurt</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="Milkproducts-item5">
+                    <div class="card-container">
+                        <img src="https://t3.ftcdn.net/jpg/04/02/96/08/360_F_402960869_sCxynK1tJGhDMAbRwhzdiwYkOLI5D3qv.webp" height=150 width=150 />
+                        <h4 class="Milkproducts-name5">Panner</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="Milkproducts-item6">
+                    <div class="card-container">
+                        <img src="https://t3.ftcdn.net/jpg/02/25/36/42/360_F_225364224_q8xAwAe1MAW4ftwo6oGcnV09pEz5O9t5.webp" height=150 width=150 />
+                        <h4 class="Milkproducts-name6">Curd</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-container">
+                <div class="Milkproducts-item7">
+                    <div class="card-container">
+                        <img src="https://t3.ftcdn.net/jpg/01/07/14/66/360_F_107146692_BfgT8r3pVmPQB27LH2H9KYm3Sssjt9wu.webp" height=150 width=150 />
+                        <h4 class="Milkproducts-name6">Margarine</h4>
+                        <button class="button">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-danger">
+            <p class="para">..</p>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="big-button">
+                <p class="big-para1">COME SEE OUR STORE</p>
+            </div>
+            <div class="big-button">
+                <p class="big-para1">VIEW OUR PRODUCTS</p>
+            </div>
+            <div class="big-button">
+                <p class="big-para1">VIEW OUR SPECIALS</p>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <div>
+
+                <img src="https://hashtag.ca/wp-content/uploads/2020/04/colorful-food-groceries-white-countertop_8087-2209.jpg" height=500 width=800 />
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-39n_hgRR0irm3un8sTZ9lOs9ZdG5KBaynr5Ylre89g&usqp=CAU&ec=48600113" height=400 width=600 />
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <p>&copy; 2023 Your Grocery Store. All rights reserved.</p>
+                </div>
+                <div class="col-md-3">
+                    <p>123 Grocery Street, City, State 12345</p>
+                </div>
+                <div class="col-md-3">
+                    <p>Phone: (123) 456-7890</p>
+                </div>
+                <div class="col-md-3">
+                    <p>Email: info@example.com</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="nav justify-content-center">
+                        <a class="nav-link" href="/">Home</a>
+
+                        <a class="nav-link" href="/products">Products</a>
+                        <a class="nav-link" href="/deals">Deals</a>
+                        <a class="nav-link" href="/about">About Us</a>
+                        <a class="nav-link" href="/faq">FAQ</a>
+                        <a class="nav-link" href="/contact">Contact Us</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">Follow us on <a href="https://www.facebook.com/yourgrocerystore">Facebook</a> | <a href="https://www.twitter.com/yourgrocerystore">Twitter</a> | <a href="https://www.instagram.com/yourgrocerystore">Instagram</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">Privacy Policy | Terms of Service</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
